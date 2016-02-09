@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HOTEL SIELNKA</title>
+		<link href="{{asset('bundles/projekthotelhotel/css/style.css')}}" rel="stylesheet" type="text/css"  media="all" />
+		<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="{{asset('bundles/projekthotelhotel/css/slider.css')}}" rel="stylesheet" type="text/css"  media="all" />
+		  <script src="{{asset('bundles/projekthotelhotel/js/jquery.min.js')}}"></script>
+		  <script type="text/javascript" src="{{asset('bundles/projekthotelhotel/js/jquery.easing.1.3.js')}}"></script> 
+		    <script type="text/javascript" src="{{asset('bundles/projekthotelhotel/js/camera.min.js')}}"></script>
+			
+                    <script type="text/javascript">
+                                  
+			   jQuery(function(){
+				jQuery('#camera_wrap_1').camera({
+					height: '500px',
+					pagination: false,
+				});
+			});
+		  </script>
+		  <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<!----start-wrap----->
+	<div class="wrap">
+		<!----start-header----->
+		<div class="header"  id="top">
+			<!----top-header----->
+			<div class="top-header">
+				<!----start-logo----->
+				<div class="logo">
+					<a href="index.html"><img src="{{asset('bundles/projekthotelhotel/images/logo.jpg')}}" title="logo" /></a>
+				</div>
+				<!----End-logo----->
+				<!----start-social-icons----->
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://facebook.com"><img src="{{asset('bundles/projekthotelhotel/images/facebook.png')}}" title="facebook"/></a></li>
+						<li><a href="https://twitter.com"><img src="{{asset('bundles/projekthotelhotel/images/twitter.png ')}}" title="twitter" /></a></li>
+						<li><a href="https://google.com"><img src="{{asset('bundles/projekthotelhotel/images/google.png')}}" title="google pluse" /></a></li>
+					</ul>
+                                        <br><br>
+                                                <div class="active"> <a  {% render controller ("FOSUserBundle:Security:login")%}</a></div>
+				</div>
+				<div class="clear"> </div>
+				<!----End-social-icons----->
+			</div>
+			<!----End-top-header----->
+			<!---start-top-nav---->
+                        {%
+                        set mainMenu = [
+                        {'path': 'hotel_glowna', 'name': 'Aktualnosci'},
+                        {'path': 'hotel_galeria', 'name': 'Galeria'},
+                        {'path': 'hotel_cennik', 'name': 'Cennik'},
+                        {'path': 'hotel_promocje', 'name': 'Promocje'},
+                        {'path': 'hotel_basen', 'name': 'Basen'},
+                        {'path': 'hotel_kontakt', 'name': 'Kontakt'},
+                        {'path': 'hotel_opinie', 'name': 'Opinie'},
+                        {'path': 'fos_user_registration_register', 'name': 'Rejestracja'},
+                         ]
+                           %}  
+			<div class="top-nav">
+				<div class="top-nav-left">
+					<ul>
+              
+                                            {% for item in mainMenu%}
+                                                <li {{app.request.get('_route')==item['path'] ? 'class="active"' : ''}}><a href="{{path(item['path'])}}">{{item['name']}}</a></li>
+                                                    {%endfor%}
+                                                 <div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="top-nav-right">
+					{# <form>
+						<input type="text"><input type="submit" value="" />
+					</form> #}
+{#                                        <div class="active"><a href="zaloguj.html">Zaloguj</a></div>#}				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---End-top-nav---->
+		</div>
+		<!----End-header----->
+	</div>
+	<!----End-wrap----->
+    {% block content %}
+
+    {% endblock %}
+		
+	
+                 
+           <div class="copy-right">
+		<div class="top-to-page">
+						<a href="#top" class="scroll"> </a>
+						<div class="clear"> </div>
+					</div>
+		<p>Autor Robert </a></p>
+	</div>
+		 <!---End-footer---->
+	</body>
+</html>

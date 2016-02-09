@@ -1,0 +1,46 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    <!---start-content---->
+		 <div class="content">
+		 	<!---start-gallery----->
+		 	<div class="gallerys">
+		 		<div class="wrap">
+					<h3>Galeria</h3>
+					<div class="gallery-grids">
+						<div class="gallery-grid">
+						 <img src="{{asset('bundles/projekthotelhotel/images/pokoj2.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                    <h4>Pokoje rodzinne</h4>
+                                                <p> Pokoje dla dwojga z możliwą dostawką</p>
+                                                 <p> Cenna za osobę dorosłą: od 45zł/doba</p>
+                                                 <p> Dostawka: od 30zł/ doba</p>
+                                                 <p> Cena może ulec zmianie w zależności od terminu</p>
+                                                  	</div>
+						<div class="gallery-grid grid2">
+						 <img src="{{asset('bundles/projekthotelhotel/images/pokoj4.JPG')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                    <h4>eksluzywne pokoje na specjalne uroczystości</h4>
+                                                <p>Świetny wybór dla nowożeńców</p>	
+                                                 <p>Cena juz od 150zł za parę/dobra</p>
+                                                  <p>W cenie szampan oraz kolacja</p>
+                                                   													
+						</div>
+						
+						<div class="clear"> </div>
+					</div>
+					<div class="clear"> </div>
+					<div class="gallery-grids">
+						
+					</div>
+<link rel="stylesheet" href="{{asset('bundles/projekthotelhotel/css/swipebox.css')}}">
+	<script src="{{asset('bundles/projekthotelhotel/js/jquery.swipebox.min.js')}}"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+				    <div class="clear"> </div>
+				    
+				</div>
+				</div>
+		 	<!---End-gallery----->
+{% endblock %}

@@ -1,0 +1,15 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     hotelNowy
+    database_user:     root
+    database_password: marchewka021
+
+    mailer_transport:  gmail
+    mailer_host:       ~
+    mailer_user:       hotel_hotel@gmail.com  
+    mailer_password:   passwd777
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt

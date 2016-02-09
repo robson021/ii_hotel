@@ -1,0 +1,72 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    		 <!---start-content---->
+		 <div class="content">
+		 	<!---start-gallery----->
+		 	<div class="gallerys">
+		 		<div class="wrap">
+					<h3>Galeria</h3>
+					<div class="gallery-grids">
+						<div class="gallery-grid">
+						<h4>Pokoje</h4>
+							<p>W najbardziej reprezentacyjnych częściach hotelu znajdują się przestronne apartamenty. Urządzono je z niezwykłą dbałością o komfort i wygodę gości. Każdy z apartamentów składa się z pokoju dziennego, sypialni oraz łazienki. W pokoju dziennym zadbano o miejsce do wypoczynku (rozkładana sofa, stolik kawowy, fotele) oraz przydatne – nie tylko podczas podróży służbowych – wygodne biurko.</p>
+				
+                                                    <a href="{{asset('bundles/projekthotelhotel/images/pokoj1.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Dla par">
+							 <img src="{{asset('bundles/projekthotelhotel/images/pokoj1.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                         <a href="{{asset('bundles/projekthotelhotel/images/pokoj2.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Gościnne">
+							 <img src="{{asset('bundles/projekthotelhotel/images/pokoj2.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                         <a href="{{asset('bundles/projekthotelhotel/images/pokoj3.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Łazienka z hydromasażem">
+							 <img src="{{asset('bundles/projekthotelhotel/images/pokoj3.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							
+						</div>
+						<div class="gallery-grid grid2">
+						<h4>Basen & Spa</h4>
+                                                    <p>Ekskluzywna pielęgnacja, którą wykonujemy w naszym Hotelu SPA przeznaczona jest dla cery delikatnej i nadpobudliwej, uwrażliwiającej się w wyniku działania czynników środowiska zewnętrznego.Przepięknym akcentem zabiegu jest masaż delikatnej cery naturalnymi kokonami jedwabników.Cera jest wygładzona, zrelaksowana i aksamitna w dotyku.</p>
+								
+                                                    <a href="{{asset('bundles/projekthotelhotel/images/basen1.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Basen">
+							 <img src="{{asset('bundles/projekthotelhotel/images/basen1.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							<a href="{{asset('bundles/projekthotelhotel/images/basen2.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Strefa Spa">
+							 <img src="{{asset('bundles/projekthotelhotel/images/basen2.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							<a href="{{asset('bundles/projekthotelhotel/images/basen3.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Indywidualne zabiegi">
+							 <img src="{{asset('bundles/projekthotelhotel/images/basen3.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							
+							
+						</div>
+						<div class="gallery-grid">
+						<h4>Krajobraz i atrakcje </h4>
+							<p>Tarnowskie Góry leżą na północ od Bytomia, na południe od Lublińca i na północny od Piekar. Przez miasto przepływa m.in. Stoła (Bobrowniki Śląskie, Osada Jana, Śródmieście-Centrum, Lasowice, Sowice i Strzybnica), Drama (Repty Śląskie) i Pniowiec (dzielnica Pniowiec). Miasto leży na skraju Niziny i Wyżyny Śląskiej. Tarnowskie Góry są głównym miastem Garbu Tarnogórskiego.</p>
+                                                    <a href="{{asset('bundles/projekthotelhotel/images/krajobraz1.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Piękne widoki">
+							 <img src="{{asset('bundles/projekthotelhotel/images/krajobraz1.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							<a href="{{asset('bundles/projekthotelhotel/images/krajobraz2.jpg')}}" class="b-link-stripe b-animate-go  swipebox"  title="Ciekawe szlaki">
+							 <img src="{{asset('bundles/projekthotelhotel/images/krajobraz2.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							<a href="{{asset('bundles/projekthotelhotel/images/krajobraz3.gif')}}" class="b-link-stripe b-animate-go  swipebox"  title="Dużo możliwości">
+							 <img src="{{asset('bundles/projekthotelhotel/images/krajobraz3.gif')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+							
+							
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="clear"> </div>
+					<div class="gallery-grids">
+						
+					</div>
+<link rel="stylesheet" href="{{asset('bundles/projekthotelhotel/css/swipebox.css')}}">
+	<script src="{{asset('bundles/projekthotelhotel/js/jquery.swipebox.min.js')}}"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+				    <div class="clear"> </div>
+				    {#<div class="projects-bottom-paination">
+						<ul>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+						</ul>
+					</div>#}
+				</div>
+				</div>
+		 	<!---End-gallery----->
+		 <!---End-content---->
+{% endblock %}

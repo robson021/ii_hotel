@@ -1,0 +1,73 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    		 <!---start-content---->
+		 <div class="content">
+		 	<!---start-contact---->
+		 	<div class="contact">
+		 		<div class="wrap">
+				<div class="section group">				
+							
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+				  	<h3>Zaloguj</h3>
+					  
+                                        <form class="form-horizontal" action="" method="post" {{form_enctype(login)}}>
+                                            {{form_label(login.login,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                                <div class="col-sm-9">
+                         
+                                    {{form_widget(login.login,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(login.login)}}
+                                      
+                                      {{form_label(login.password,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                           
+                         
+                                    {{form_widget(login.password,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(login.password)}}
+                                      
+                                      </div>
+                   
+                                                   {{form_label(login.potwierdz,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                         
+                                    {{form_widget(login.potwierdz,{'attr': {'class':'form-control'}}) }}
+                                       
+                                    
+                                    <div> <p>Nie masz konta? </p> <a href="rejestracja">Zarejestruj się</a>
+                                        
+                                    </div>
+                                    {# <form>
+					    	<div>
+						    	<span><label>Imie</label></span>
+						    	<span><input type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-MAIL</label></span>
+						    	<span><input type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>Telefon</label></span>
+						    	<span><input type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>Temat</label></span>
+						    	<span><textarea> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="wyślij"></span>
+						  </div>
+					    </form>#}
+
+                                           
+                                           
+				    </div>
+  				</div>				
+			  </div>
+			</div>
+			</div>
+                 </div>
+		 	<!---End-contact---->
+		 <!---End-content---->
+{% endblock %}

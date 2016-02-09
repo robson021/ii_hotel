@@ -1,0 +1,73 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    		 <!---start-content---->
+		 <div class="content">
+		 	<!---start-contact---->
+		 	<div class="contact">
+		 		<div class="wrap">
+				<div class="section group">				
+				<div class="col span_1_of_3">
+					<div class="contact_info">
+			    	 	<h3>Tu Jesteśmy!</h3>
+			    	 		<div class="map">
+                                                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://addmap.net/'>https://www.Addmap.net</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=217fa7d561e83f74dbe3841336a00adbbc32a01a'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(49.471532432053166,20.022464399613916),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.471532432053166,20.022464399613916)});infowindow = new google.maps.InfoWindow({content:'<strong>Hotel Sielanka</strong><br>Krakowska<br> Nowy Targ<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					   			{#<iframe width="100%" height="175" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://www.google.com/maps/place/Krakowska,+Nowy+Targ,+Poland/@49.4706993,20.0188381,17z/data=!3m1!4b1!4m2!3m1!1s0x4715e4fce7d1da67:0x9b407dc9667d098?hl=en" style="color:#666;text-align:left;font-size:12px">View Larger Map</a></small>#}
+					   		</div>
+      				</div>
+      			<div class="company_address">
+                                                <h3>Informacje :</h3>
+						<p>Krakowska 7A, Nowy Targ</p>
+						<p>Polska</p>
+				   		<p>Telefon:(00) 222 666 444</p>
+				   		<p>Fax: (000) 000 00 00 0</p>
+				 	 	<p>Email: <span><a href="mailto:nowak021@gmail.com">sielanka@gmail.com</a></span></p>
+				   		
+				   </div>
+				</div>				
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+				    <h3>Kontakt</h3>
+					
+                                
+                                             <form class="form-horizontal" action="" method="post" {{form_enctype(kontakt)}}>
+                            <div class ="form-group">
+                                     
+                         
+                                {{form_label(kontakt.nick,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                    
+                         
+                                    {{form_widget(kontakt.nick,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(kontakt.nick)}}
+                          
+                                {{form_label(kontakt.email,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                               
+                                    {{form_widget(kontakt.email,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(kontakt.email)}}
+                           
+                        
+						   		
+                                {{form_label(kontakt.wiadomosc,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                                            
+                                    {{form_widget(kontakt.wiadomosc,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(kontakt.wiadomosc)}}
+                             
+                   
+                                                   {{form_label(kontakt.potwierdz,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                         
+                                    {{form_widget(kontakt.potwierdz,{'attr': {'class':'form-control'}}) }}
+                                  
+                                    {{ form_rest(kontakt) }}
+                                    </form>
+				   
+				    </div>
+  				</div>				
+			  </div>
+			</div>
+			</div>
+		 	<!---End-contact---->
+		 <!---End-content---->
+{% endblock %}

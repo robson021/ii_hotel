@@ -1,0 +1,65 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    	<!----End-wrap----->
+	<!--start-image-slider---->
+			<div class="slider">					     
+					<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">									           
+						<div data-src="{{asset('bundles/projekthotelhotel/images/slider3.jpg')}}">  </div> 
+						<div data-src="{{asset('bundles/projekthotelhotel/images/slider2.jpg')}}">  </div>
+						<div data-src="{{asset('bundles/projekthotelhotel/images/slider1.jpg')}}">  </div>
+						<div data-src="{{asset('bundles/projekthotelhotel/images/slider2.jpg')}}">  </div>
+					</div>
+					<div class="clear"> </div>					       
+			</div>					
+		 <!--End-image-slider---->
+		
+                
+		 	<div class="bottom-grids">
+							<div class="wrap">
+								<div class="bottom-grid1">
+									<h3>Aktualności</h3>
+                                                                        <span>Witamy! </span>
+									<ul>
+										<li>Serdecznie witamy w Hotelu Sielanka.
+Mamy nadzieję, że niepowtarzalny klimat oryginalnych wnętrz, najwyższa jakość usług oraz serdeczna i domowa atmosfera zapewnią Państwu wspomnienia mile spędzonych chwil.
+Jednocześnie gwarantujemy, że profesjonalny personel dołoży wszelkich starań, aby spełnić wszystkie Państwa oczekiwania. </li>
+										
+										<div class="clear"> </div>
+									</ul><br>
+									<a class="info-btn" href="#">Read More</a>
+								</div>
+								<div class="bottom-grid2 bottom-mid">
+									<h3>Historia</h3>
+									
+									<p> Hotel sielanka jako teren administracyjnie należała do wsi Hordis Tal, powstałej jako kolonia w połowie XIX w. Mieszkańcy tego miejsca utrzymywali się głównie z pracy w kamieniołomie i wapienniku, uprawy roli oraz hodowli zwierząt. Na przełomie XIX i XX wieku działała tu gospoda "Przy Zielonym Lesie", usytuowana przy szlaku turystycznym wiodącym ze Zdroju do zamku Homole i dawnej kwatery króla Prus Fryderyka Wilhelma II, który obserwował manewry swoich wojsk w 1776 r. opodal zamku.
+W okresie międzywojennym na terenie Polany istniał tor saneczkowy, bobslejowy oraz skocznia narciarska. Na początku lat pięćdziesiątych XX w. na Polanie od strony miasta została już tylko jedna zagroda zamieszkana przez Antoniego Jamroza, od którego w późniejszych latach przyjęła się nazwa Jamrozowa Polana. W końcu lat osiemdziesiątych XX w. na Jamrozowej Polanie zbudowano duży, dobrze wyposażony ośrodek narciarstwa klasycznego, biathlonu oraz urządzenia sportowe z zapleczem hotelowo-treningowym.
+ 
+W dawnym Bad Reinerz w latach 1865-1945 działało aż 5 browarów, z których 3 mieściły się 
+w rynku, m.in. w najstarszym budynku miasta - przy obecnej ul. Słowackiego, oraz w dzisiejszej siedzibie Fundacji Międzynarodowych Festiwali Chopinowskich. Były to niewielkie rodzinne browary, których piwo cieszyło się uznaniem mieszkańców i kuracjuszy. Dziś Browar Jamrozowa Polana podtrzymuje piwowarskie tradycje Dusznik-Zdroju, oferując piwoszom aż 4 gatunki złocistego trunku, warzone tradycyjną metodą, jak również piwa warzone okolicznościowo.</p>
+										<img src="{{asset('bundles/projekthotelhotel/images/hotelstary.jpg')}}" alt=""></a>												
+                                                                </ul><br>										
+                                                                </div>
+									<script type="text/javascript" src="{{asset('bundles/projekthotelhotel/images/js/jquery.lightbox.js')}}"></script>
+								    <link rel="stylesheet" type="text/css" href="{{asset('bundles/projekthotelhotel/images/css/lightbox.css')}}" media="screen" />
+								  <script type="text/javascript">
+								    $(function() {
+								        $('.gallery a').lightBox();
+								    });
+								    </script>
+							</div>
+							<div class="bottom-grid1 bottom-last">
+									<h3>Przydatne linki</h3>
+									
+									<p>  <a href="http://google.pl"> Pogoda</a></p>
+									<p>  <a href="http://google.pl"> Informacja turystyczna</a></p>
+                                                                        <p>  <a href="http://google.pl"> Rozkład autobusów</a></p>
+                                                                        <p>  <a href="http://google.pl"> Rozkład wydarzeń arytystycznych</a></p>                   
+									<br>
+					
+								</div>
+								<div class="clear"> </div>
+							</div>
+							<div class="clear"> </div>
+	<!--end-wrap--->
+{% endblock %}

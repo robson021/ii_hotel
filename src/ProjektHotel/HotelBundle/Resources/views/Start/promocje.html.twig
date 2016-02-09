@@ -1,0 +1,59 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    		 <!---start-content---->
+		 <div class="content">
+		 	<!---start-gallery----->
+		 	<div class="gallerys">
+		 		<div class="wrap">
+					<h3>Galeria</h3>
+					<div class="gallery-grids">
+						<div class="gallery-grid">
+						 
+                                                 <img src="{{asset('bundles/projekthotelhotel/images/siodmydzien.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                    <h4>7my dzień za darmo!</h4>
+                                        <p> Dobrze Ci z nami? Zostań na dłużej</p>
+                                                 <p> U nas to my płacimy za 7my nocleg </p>
+                                            
+                                                </div>
+						<div class="gallery-grid grid2">
+						
+                                                    
+							 <img src="{{asset('bundles/projekthotelhotel/images/spa.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                    <h4>Karnet 10 indywidualnych zabiegów SPA & Wellnes za 199zł</h4>
+                                                <p>Karnet obejmuje:</p>	
+                                                 <p>Masaż tajski</p>
+                                                  <p>Terapia gorącymi kamieniami</p>
+                                                   <p>Kąpiele błotne</p>
+                                                   <p>Kuracja wyciszjąca</p>
+                                                   													
+						</div>
+                                                    
+                                                   <div class="gallery-grid">
+						        <img src="{{asset('bundles/projekthotelhotel/images/regionalny.jpg')}}" alt="" class="img-responsive"><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03"> </h2> </div></a>
+                                                    <h4>W każdą sobotę wieczór regionalny</h4>
+                                                <p> Przekąski prosto z gór</p>
+                                                 <p> Pokaz ludowych strojów</p>
+                                                 <p> Warsztaty z grupą regionalną :"Ludowadła" </p>
+                                            
+                                                </div>
+						
+						<div class="clear"> </div>
+					</div>
+					<div class="clear"> </div>
+					<div class="gallery-grids">
+						
+					</div>
+<link rel="stylesheet" href="{{asset('bundles/projekthotelhotel/css/swipebox.css')}}">
+	<script src="{{asset('bundles/projekthotelhotel/js/jquery.swipebox.min.js')}}"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+</script>
+				    <div class="clear"> </div>
+				   
+				</div>
+				</div>
+		 	<!---End-gallery----->
+{% endblock %}

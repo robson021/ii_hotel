@@ -1,0 +1,7 @@
+projekt_hotel_hotel_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ProjektHotelHotelBundle:Default:index }
+
+projekt_hotel_hotel_annotation:
+    resource: "@ProjektHotelHotelBundle/Controller"
+    type: annotation

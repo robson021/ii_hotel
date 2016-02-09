@@ -1,0 +1,63 @@
+{% extends "ProjektHotelHotelBundle::szablon.html.twig" %}
+
+{% block content %}
+    		 <!---start-content---->
+		  <div class="content">
+		 	<!---start-contact---->
+		 	<div class="contact">
+		 		<div class="wrap">
+				<div class="section group">				
+						
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+				  	<h3>Opinie</h3>
+                                        
+                                        
+					
+                            {#                 <form class="form-horizontal" action="" method="post" {{form_enctype(kontakt)}}>
+                            <div class ="form-group">
+                                {{form_label(kontakt.nick,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                                <div class="col-sm-9">
+                         
+                                    {{form_widget(kontakt.nick,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(kontakt.nick)}}
+           
+                               
+                                        
+                                {{form_label(kontakt.email,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                                    {{form_widget(kontakt.email,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(kontakt.email)}}
+                         
+                                      {{form_label(kontakt.wiadomosc,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+                                
+                                
+                         
+                                    {{form_widget(kontakt.wiadomosc,{'attr': {'class':'form-control'}}) }}
+                                      {{form_errors(kontakt.wiadomosc)}}
+                        
+                                
+                            
+                   
+                                                   {{form_label(kontakt.potwierdz,null,{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                         
+                                    {{form_widget(kontakt.potwierdz,{'attr': {'class':'form-control'}}) }}
+                                  
+                                                  
+                                             </form>  #}  
+
+				    </div>
+  				</div>				
+			  </div>
+			</div>
+			</div>
+                                </div>
+                        </div>
+        
+        {#   {{form(rejestracja)}}#}
+                        
+                 </div> 
+		 <!---End-content---->
+{% endblock %}
